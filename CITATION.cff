@@ -1,0 +1,73 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  OpenSTEP: public data release of the STEP Prototype
+  Powerplant scenario SPP-001
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Theodore Andrew
+    family-names: Brown
+    email: theo.brown@ukaea.uk
+    affiliation: United Kingdom Atomic Energy Authority
+    orcid: "https://orcid.org/0009-0009-2378-8965"
+  - given-names: Francis James
+    family-names: Casson
+    email: francis.casson@ukaea.uk
+    affiliation: United Kingdom Atomic Energy Authority
+    orcid: "https://orcid.org/0000-0001-5371-5876"
+  - given-names: Agnieszka
+    family-names: Hudoba
+    affiliation: United Kingdom Atomic Energy Authority
+    orcid: "https://orcid.org/0000-0002-8197-7977"
+  - given-names: Stephen Philip
+    family-names: Marsden
+    affiliation: United Kingdom Atomic Energy Authority
+    orcid: "https://orcid.org/0009-0005-1175-7329"
+  - given-names: Emmi
+    family-names: Tholerus
+    affiliation: United Kingdom Atomic Energy Authority
+    orcid: "https://orcid.org/0000-0002-3262-1958"
+  - given-names: Thomas
+    family-names: Wilson
+    affiliation: United Kingdom Atomic Energy Authority
+    orcid: "https://orcid.org/0009-0001-4343-834X"
+  - name: The STEP Team
+    address: "United Kingdom Atomic Energy Authority, Culham Campus"
+    country: GB
+    city: Abingdon
+    post-code: OX14 3DB
+    region: Oxfordshire
+identifiers:
+  - type: doi
+    value: 10.14468/07jt-s540
+    description: DOI of the data on the UKAEA Open Data Registry
+repository-code: "https://github.com/ukaea/openstep"
+abstract: >-
+  This dataset contains a curated set of results from key
+  physics simulations performed at UKAEA for the STEP
+  Prototype Power Plant, version 1 (SPP-001). It includes
+  the coilset, equilibrium, and kinetic profiles of the STEP
+  plasma scenario.
+
+  The free-boundary equilibrium was computed using Fiesta, a
+  Grad-Shafranov equilibrium solver. Kinetic profiles were
+  simulated using JINTRAC, a 1.5D integrated modelling code
+  incorporating transport, heating, current drive, fuelling,
+  and fixed-boundary equilibrium updates. 
+
+  The original data was published in the following papers:
+    (1) Hudoba, A., et al. Optimisation of the poloidal field system for advanced divertor configurations in STEP. Nuclear Fusion 64.8 (2024): 086055,
+    (2) Tholerus, E., et al. Flat-top plasma operational space of the STEP power plant. Nuclear Fusion 64.10 (2024): 106030.
+keywords:
+  - tokamak
+  - plasma
+  - plasma-science
+  - dataset
+license: CC-BY-4.0
+version: "1.0"
+date-released: "2025-10-09"

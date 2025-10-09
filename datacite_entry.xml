@@ -1,0 +1,177 @@
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://datacite.org/schema/kernel-4"
+          xsi:schemaLocation="http://datacite.org/schema/kernel-4 http://schema.datacite.org/meta/kernel-4.4/metadata.xsd">
+<identifier identifierType="DOI">https://doi.org/10.14468/07jt-s540</identifier>
+<resourceType resourceTypeGeneral="Dataset">IMAS data structures containing the inputs and outputs of integrated modelling simulations for the STEP Prototype Power Plant, version 1 (SPP-001)</resourceType>
+<creators>
+<creator>
+<creatorName nameType="Personal">Brown</creatorName>
+<givenName>Theodore Andrew</givenName>
+<familyName>Brown</familyName>
+<nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">https://orcid.org/0009-0009-2378-8965</nameIdentifier>
+<affiliation affiliationIdentifier="https://ror.org/0361bwx64" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org/">United Kingdom Atomic Energy Authority (UKAEA)</affiliation>
+</creator>
+<creator>
+<creatorName nameType="Personal">Casson</creatorName>
+<givenName>Francis James</givenName>
+<familyName>Casson</familyName>
+<nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">https://orcid.org/0000-0001-5371-5876</nameIdentifier>
+<affiliation affiliationIdentifier="https://ror.org/0361bwx64" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org/">United Kingdom Atomic Energy Authority (UKAEA)</affiliation>
+</creator>
+<creator>
+<creatorName nameType="Personal">Hudoba</creatorName>
+<givenName>Agnieszka</givenName>
+<familyName>Hudoba</familyName>
+<nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">https://orcid.org/0000-0002-8197-7977</nameIdentifier>
+<affiliation affiliationIdentifier="https://ror.org/0361bwx64" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org/">United Kingdom Atomic Energy Authority (UKAEA)</affiliation>
+</creator>
+<creator>
+<creatorName nameType="Personal">Marsden</creatorName>
+<givenName>Stephen Philip</givenName>
+<familyName>Marsden</familyName>
+<nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">https://orcid.org/0009-0005-1175-7329</nameIdentifier>
+<affiliation affiliationIdentifier="https://ror.org/0361bwx64" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org/">United Kingdom Atomic Energy Authority (UKAEA)</affiliation>
+</creator>
+<creator>
+<creatorName nameType="Personal">Tholerus</creatorName>
+<givenName>Emmi</givenName>
+<familyName>Tholerus</familyName>
+<nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">https://orcid.org/0000-0002-3262-1958</nameIdentifier>
+<affiliation affiliationIdentifier="https://ror.org/0361bwx64" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org/">United Kingdom Atomic Energy Authority (UKAEA)</affiliation>
+</creator>
+<creator>
+<creatorName nameType="Personal">Wilson</creatorName>
+<givenName>Thomas</givenName>
+<familyName>Wilson</familyName>
+<nameIdentifier nameIdentifierScheme="ORCID" schemeURI="https://orcid.org/">https://orcid.org/0009-0001-4343-834X</nameIdentifier>
+<affiliation affiliationIdentifier="https://ror.org/0361bwx64" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org/">United Kingdom Atomic Energy Authority (UKAEA)</affiliation>
+</creator>
+<creator>
+<creatorName nameType="Organizational">the STEP team</creatorName>
+<affiliation affiliationIdentifier="https://ror.org/0361bwx64" affiliationIdentifierScheme="ROR" schemeURI="https://ror.org/">United Kingdom Atomic Energy Authority (UKAEA)</affiliation>
+</creator>
+</creators>
+<titles>
+<title>OpenSTEP: public data release of the STEP Prototype Powerplant scenario SPP-001</title>
+</titles>
+<publisher>United Kingdom Atomic Energy Authority (UKAEA)</publisher>
+<publicationYear>2025</publicationYear>
+<dates>
+<date dateType="Collected" dateInformation="Free boundary equilibrium and coilset uploaded to SimDB (alias SPP1_CML5_FBE)">20250923</date>
+<date dateType="Collected" dateInformation="Integrated modelling scenarios uploaded to SimDB (alias smars/jetto/step/88888/oct1223/seq-1)">20231018</date>
+<date dateType="Created" dateInformation="Publication of paper concerning free boundary equilibrium (https://iopscience.iop.org/article/10.1088/1741-4326/ad53e2)">20240715</date>
+<date dateType="Created" dateInformation="Publication of paper concerning integrated modelling scenarios (https://iopscience.iop.org/article/10.1088/1741-4326/ad6ea2)">20240830</date>
+</dates>
+<alternateIdentifiers>
+<alternateIdentifier alternateIdentifierType="sha1">94e0f9cf821153fc348686f1882d8a758716ffe3</alternateIdentifier>
+<alternateIdentifier alternateIdentifierType="register_id">2025-10-09-12-58-29-611754</alternateIdentifier>
+</alternateIdentifiers>
+<relatedIdentifiers>
+<relatedIdentifier relatedIdentifierType="DOI" relationType="IsSupplementTo" resourceTypeGeneral="JournalArticle">10.1088/1741-4326/ad53e2</relatedIdentifier>
+<relatedIdentifier relatedIdentifierType="DOI" relationType="IsSupplementTo" resourceTypeGeneral="JournalArticle">10.1088/1741-4326/ad6ea2</relatedIdentifier>
+</relatedIdentifiers>
+<rightsList>
+<rights rightsURI="https://creativecommons.org/licenses/by/4.0/legalcode" rightsIdentifier="CC BY 4.0" rightsIdentifierScheme="SPDX" schemeURI="https://spdx.org/licenses/">Creative Commons Attribution 4.0 International</rights>
+<rights>Access to the data resource is open.</rights>
+</rightsList>
+<descriptions>
+<description descriptionType="Abstract">This dataset contains a curated set of results from key physics simulations performed at UKAEA for the STEP Prototype Power Plant, version 1 (SPP-001). It includes the coilset, equilibrium, and kinetic profiles of the STEP plasma scenario.
+
+The free-boundary equilibrium was computed using Fiesta, a Grad-Shafranov equilibrium solver. Kinetic profiles were simulated using JINTRAC, a 1.5D integrated modelling code incorporating transport, heating, current drive, fuelling, and fixed-boundary equilibrium updates. 
+
+The original data was published in the following papers:
+(1) Hudoba, A., et al. &amp;quot;Optimisation of the poloidal field system for advanced divertor configurations in STEP.&amp;quot; Nuclear Fusion 64.8 (2024): 086055,
+(2) Tholerus, E., et al. &amp;quot;Flat-top plasma operational space of the STEP power plant.&amp;quot; Nuclear Fusion 64.10 (2024): 106030.</description>
+<description descriptionType="TechnicalInfo">The free-boundary equilibrium data includes:
+(1) equilibrium IDS, containing free-boundary equilibrium,
+(2) pf_active IDS, containing the coilset and currents,
+(3) wall IDS, containing a limiter point only.
+
+The transport data includes:
+(1) core_profiles IDS,
+(2) core_sources IDS,
+(3) core_transport IDS,
+(4) equilibrium IDS, containing a fixed boundary equilibrium consistent with the kinetic profiles.</description>
+<description descriptionType="TableOfContents">NAME,SIZE,TYPE,EXT,LAST_MODIFIED,FORMAT_NAME,MIME_TYPE
+openstep.tar.gz,9501154,Container,gz,2025-10-09T13:41:33,GZIP Format,application/gzip
+openstep.tar,16076800,Container,tar,,Tape Archive Format,application/x-tar
+openstep,,Folder,,2025-10-09T13:41:42,,
+scripts,,Folder,,2025-10-09T13:41:42,,
+README.md,7075,File,md,2025-10-09T13:16:15,Markdown,text/markdown
+LICENSE.txt,18657,File,txt,2023-09-11T22:49:41,Plain Text File,text/plain
+plot_equilibrium.ipynb,182209,File,ipynb,2025-10-08T14:13:41,Jupyter Python Notebook,
+fiesta_to_imas.m,840,File,m,2025-09-27T13:54:46,,
+free_boundary.png,2068807,File,png,2025-10-08T14:13:03,Portable Network Graphics,image/png
+plot_ftop.ipynb,95962,File,ipynb,2025-10-08T14:19:22,Jupyter Python Notebook,
+ec-hd,,Folder,,2025-10-09T13:41:42,,
+ftop,,Folder,,2025-10-09T13:41:42,,
+_src,,Folder,,2025-10-09T13:41:42,,
+imas_to_nc.py,706,File,py,2025-09-29T11:53:00,Python Script File,
+ftop.png,995896,File,png,2025-10-08T14:13:38,Portable Network Graphics,image/png
+jetto.ssp1,21724,File,ssp1,2025-10-09T13:25:37,,
+jetto.sst1,1776,File,sst1,2025-10-09T13:25:37,,
+jetto.ssp2,10296,File,ssp2,2025-10-09T13:25:37,,
+jetto.sst2,1484,File,sst2,2025-10-09T13:25:37,,
+jetto.eqdsk_out,384341,File,eqdsk_out,2025-10-09T13:25:37,,
+imasdb,,Folder,,2025-10-09T13:41:42,,
+ntms.h5,13096,File,h5,2025-10-08T13:14:42,,application/x-hdf5
+jetto.sst,380,File,sst,2025-10-09T13:23:35,,
+jetto.jsp,176330,File,jsp,2025-10-09T13:23:35,Java Servlet Page,text/html
+jetto.sst3,1995,File,sst3,2025-10-09T13:25:37,,
+jetto.jst,17781,File,jst,2025-10-09T13:23:35,,
+jetto.ssp3,30295,File,ssp3,2025-10-09T13:25:37,,
+jetto.ssp,5190,File,ssp,2025-10-09T13:23:35,,
+core_sources.h5,176192,File,h5,2025-10-08T13:14:42,,application/x-hdf5
+core_transport.h5,336896,File,h5,2025-10-08T13:14:42,,application/x-hdf5
+master.h5,2400,File,h5,2025-10-08T13:14:42,,application/x-hdf5
+STEP_SPP_001_ECHD_ftop.nc,1260824,File,nc,2025-10-08T10:01:03,HDF5,application/x-netcdf
+CITATION.cff,1990,File,cff,2025-10-09T13:28:13,,
+eb-cc,,Folder,,2025-10-09T13:41:42,,
+ftop,,Folder,,2025-10-09T13:41:42,,
+_src,,Folder,,2025-10-09T13:41:42,,
+datacite_entry.xml,8268,File,xml,2025-10-09T13:26:10,,text/xml
+jetto.ssp3,30295,File,ssp3,2025-10-09T13:25:37,,
+jetto.sst2,1484,File,sst2,2025-10-09T13:25:37,,
+jetto.sst1,1776,File,sst1,2025-10-09T13:25:37,,
+jetto.ssp2,10296,File,ssp2,2025-10-09T13:25:37,,
+jetto.sst3,1995,File,sst3,2025-10-09T13:25:37,,
+jetto.ssp1,21724,File,ssp1,2025-10-09T13:25:37,,
+jetto.jst,17781,File,jst,2025-10-09T13:21:50,,
+jetto.eqdsk_out,384341,File,eqdsk_out,2025-10-09T13:25:37,,
+jetto.sst,380,File,sst,2025-10-09T13:21:50,,
+jetto.ssp,5190,File,ssp,2025-10-09T13:21:50,,
+core_profiles.h5,452820,File,h5,2025-10-08T13:14:42,,application/x-hdf5
+imasdb,,Folder,,2025-10-09T13:41:42,,
+jetto.jsp,176330,File,jsp,2025-10-09T13:21:50,Java Servlet Page,text/html
+summary.h5,224079,File,h5,2025-10-08T13:14:42,,application/x-hdf5
+ntms.h5,13096,File,h5,2025-10-08T13:48:16,,application/x-hdf5
+master.h5,2400,File,h5,2025-10-08T13:47:13,,application/x-hdf5
+freeboundary,,Folder,,2025-10-09T13:41:42,,
+_src,,Folder,,2025-10-09T13:41:42,,
+STEP_SPP_001_EBCC_ftop.nc,1262321,File,nc,2025-10-08T13:47:38,HDF5,application/x-netcdf
+jetto.eqdsk_out,384341,File,eqdsk_out,2025-10-08T16:36:32,,
+coilset.mat,9164,File,mat,2025-10-08T16:53:52,Level 5 MAT-file format (MATLAB),
+equilibrium.mat,1740703,File,mat,2025-10-08T16:53:52,Level 5 MAT-file format (MATLAB),
+core_sources.h5,177016,File,h5,2025-10-08T13:47:13,,application/x-hdf5
+imasdb,,Folder,,2025-10-09T13:41:42,,
+summary.h5,224090,File,h5,2025-10-08T13:47:13,,application/x-hdf5
+master.h5,2216,File,h5,2025-10-08T13:14:12,,application/x-hdf5
+wall.h5,94128,File,h5,2025-10-08T13:14:12,,application/x-hdf5
+core_transport.h5,336864,File,h5,2025-10-08T13:47:13,,application/x-hdf5
+STEP_SPP_001_EBCC_freeboundary.nc,1273723,File,nc,2025-10-02T14:55:14,HDF5,application/x-netcdf
+pf_active.h5,111701,File,h5,2025-10-08T13:14:12,,application/x-hdf5
+equilibrium.h5,780947,File,h5,2025-10-08T13:14:42,,application/x-hdf5
+core_profiles.h5,453056,File,h5,2025-10-08T13:47:13,,application/x-hdf5
+equilibrium.h5,778660,File,h5,2025-10-08T13:47:13,,application/x-hdf5
+equilibrium.h5,1230708,File,h5,2025-10-08T13:14:12,,application/x-hdf5
+</description>
+<description descriptionType="Other">Programme Area:STEP</description>
+</descriptions>
+<sizes>
+<size>9501154</size>
+</sizes>
+<formats>
+<format>GZIP Format, application/gzip</format>
+</formats>
+<version>1.0</version>
+</resource>
