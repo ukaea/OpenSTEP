@@ -20,9 +20,9 @@ Two formats are provided: `*/imasdb/*`, entries written with the HDF5 Access Lay
 
 ## Contents
 
-| Free boundary solution                             | Flat-top operating point                  |
-| -------------------------------------------------- | ----------------------------------------- |
-| <img src="scripts/free_boundary.png" width="100%"> | <img src="scripts/ftop.png" width="100%"> |
+| Free boundary solution                             | Flat-top operating point                  | First wall                                |
+| -------------------------------------------------- | ----------------------------------------- | ----------------------------------------- |
+| <img src="scripts/free_boundary.png" width="100%"> | <img src="scripts/ftop.png" width="100%"> | <img src="scripts/wall.png" width="100%"> |
 
 Two scenarios are included, one that uses electron Bernstein heating combined with electron cyclotron heating, and one that uses electron cyclotron heating only.
 Note that free boundary equilibrium is only available for the EB-CC scenario, which is shown above.
@@ -32,6 +32,7 @@ Note that free boundary equilibrium is only available for the EB-CC scenario, wh
 | `eb-cc/freeboundary` | Electron cyclotron and electron Bernstein heating, conservative confinement, free boundary equilibrium solve             | `equilibrium` (free boundary), `pf_active`, `wall` (limiter only)                 | [1]    | [`SPP1_CML5_FBE`](https://simdb.step.ukaea.uk/alias/SPP1_CML5_FBE)                                                   | `bee36f40-9891-11f0-9ba9-0cc47a7eec52` |
 | `eb-cc/ftop`         | Electron cyclotron and electron Bernstein heating, conservative confinement, full simulation of flat-top operating point | `core_profiles`, `core_sources`, `core_transport`, `equilibrium` (fixed boundary) | [2]    | [`twilson/jetto/step/88888/may3123/seq-2`](https://simdb.step.ukaea.uk/alias/twilson/jetto/step/88888/may3123/seq-2) | `d9d7029a-053f-11ee-99fc-6f3cc269b851` |
 | `ec-hd/ftop`         | Electron cyclotron heating only, high density, full simulation of flat-top operating point                               | `core_profiles`, `core_sources`, `core_transport`, `equilibrium` (fixed boundary) | [2]    | [`smars/jetto/step/88888/oct1223/seq-1`](https://simdb.step.ukaea.uk/alias/smars/jetto/step/88888/oct1223/seq-1)     | `77498568-6d9e-11ee-834f-c9a93c9c1edd` |
+| `wall`               | First wall description                                                                                                   | `wall`                                                                            | [3]    | [`/shenders/SPR452DWall`](https://simdb.step.ukaea.uk/alias/shenders/SPR452DWall)                                    | `65ef354c-bfc2-11f0-a25f-07523e9ae0ab` |
 
 SimDB aliases and UUIDs are provided for internal provenance tracking.
 
@@ -53,14 +54,16 @@ url = {https://doi.org/10.14468/07jt-s540}
 
 The original data was published in the following papers:
 
-| Reference | Paper                                                                                                                                              | DOI                                                                  | Code                                                                                                 |
-| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| [1]       | *Hudoba, A., et al. "Optimisation of the poloidal field system for advanced divertor configurations in STEP." Nuclear Fusion 64.8 (2024): 086055.* | [10.1088/1741-4326/ad53e2](https://doi.org/10.1088/1741-4326/ad53e2) | [Fiesta](https://doi.org/10.1016/j.fusengdes.2013.10.001)                                            |
-| [2]       | *Tholerus, E., et al. "Flat-top plasma operational space of the STEP power plant." Nuclear Fusion 64.10 (2024): 106030.*                           | [10.1088/1741-4326/ad6ea2](https://doi.org/10.1088/1741-4326/ad6ea2) | [JINTRAC](https://doi.org/10.1585/pfr.9.3403023), [JETTO](https://inis.iaea.org/records/7h4y6-32977) |
+| Reference | Paper                                                                                                                                                              | DOI                                                                  | Code                                                                                                 |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| [1]       | *Hudoba, A., et al. "Optimisation of the poloidal field system for advanced divertor configurations in STEP." Nuclear Fusion 64.8 (2024): 086055.*                 | [10.1088/1741-4326/ad53e2](https://doi.org/10.1088/1741-4326/ad53e2) | [Fiesta](https://doi.org/10.1016/j.fusengdes.2013.10.001)                                            |
+| [2]       | *Tholerus, E., et al. "Flat-top plasma operational space of the STEP power plant." Nuclear Fusion 64.10 (2024): 106030.*                                           | [10.1088/1741-4326/ad6ea2](https://doi.org/10.1088/1741-4326/ad6ea2) | [JINTRAC](https://doi.org/10.1585/pfr.9.3403023), [JETTO](https://inis.iaea.org/records/7h4y6-32977) |
+| [3]       | *Henderson, S.S., et al. "An overview of the STEP divertor design and the simple models driving the plasma exhaust scenario." Nuclear Fusion 65.1 (2025): 016033.* | [10.1088/1741-4326/ad93e7](https://doi.org/10.1088/1741-4326/ad93e7) | N/A                                                                                                  |
 
 Note that the original simdb entries did not contain IMAS formatted data; this was generated from the original SimDB entries manually.
 For the JINTRAC/JETTO IDSs, this meant running a "continue" simulation in JETTO with IDS output enabled starting from the given SimDB case.
 For the Fiesta IDSs, this meant using IMAS conversion scripts on Oliver Bardsley's fork of Fiesta.
+For the Wall IDS, this was done manually (see `scripts/wall.ipynb`).
 
 ## License
 
@@ -69,7 +72,7 @@ This means you are free to use and adapt OpenSTEP in any project, as long as you
 
 ## Acknowledgements
 
-Many thanks to Agnieszka Hudoba, Emmi Tholerus and Oliver Bardsley for generating the data and providing help with the open-sourcing process.
+Many thanks to Agnieszka Hudoba, Emmi Tholerus, Stuart Henderson and Oliver Bardsley for generating the data and providing help with the open-sourcing process.
 
 This work has been funded by STEP, a UKAEA programme to design and build a prototype fusion energy plant and a path to commercial fusion.
 
