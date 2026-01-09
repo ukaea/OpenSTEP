@@ -35,6 +35,11 @@ Note that free boundary equilibrium is only available for the EB-CC scenario, wh
 
 SimDB aliases and UUIDs are provided for internal provenance tracking.
 
+## Sign conventions
+
+* IMAS output (Data Dictionary version 3) is [COCOS 11](https://imas-data-dictionary.readthedocs.io/en/latest/cocos.html#cocos)
+* Eqdsk output is COCOS 1 (consistent with [original definition](https://w3.pppl.gov/ntcc/TORAY/G_EQDSK.pdf))
+
 ## Sources and citing
 
 To cite this release, please use the following:
