@@ -16,7 +16,7 @@ This design milestone is variously known as SPR45, SPP-001, and CML5.
 It does not necessarily reflect the current or future state of the STEP programme.
 
 The data is provided in [IMAS data entries](https://imas-data-dictionary.readthedocs.io/en/latest/) containing IMAS data structures (IDSs).
-Two formats are provided: `*/imasdb/*`, entries written with the HDF5 Access Layer (not currently open source), and `*/STEP_SPP_001_*.nc`, NetCDF5 entries readable with [IMAS-Python](https://imas-python.readthedocs.io/en/stable/netcdf.html) (open source).
+Two formats are provided: `*/imasdb/*`, entries written with the [IMAS Access Layer](https://imas-core.readthedocs.io/en/latest/user_guide/index.html) using the HDF5 backend, and `*/STEP_SPP_001_*.nc`, NetCDF5 entries readable directly with [IMAS-Python](https://imas-python.readthedocs.io/en/stable/netcdf.html).  Both formats may be read with open source IMAS software components (though the installation and dependencies of the latter are lighter).
 
 ## Contents
 
@@ -35,10 +35,11 @@ Note that free boundary equilibrium is only available for the EB-CC scenario, wh
 
 SimDB aliases and UUIDs are provided for internal provenance tracking.
 
-## Sign conventions
+## Sign conventions and file formats
 
 * IMAS output (Data Dictionary version 3) is [COCOS 11](https://imas-data-dictionary.readthedocs.io/en/latest/cocos.html#cocos)
 * Eqdsk output is COCOS 1 (consistent with [original definition](https://w3.pppl.gov/ntcc/TORAY/G_EQDSK.pdf))
+* JETTO native output (`jetto.jsp`, `jetto.jst,` etc) is COCOS 2 and may be read into python with [jetto-tools](https://pypi.org/project/jetto-tools/).
 
 ## Sources and citing
 
